@@ -4,7 +4,7 @@ const Link = ({item}) => {
     const {name,link} = item;
     return (
         <div>
-            <li className='ml-4 text-xl text-black hover:text-orange-500'><a href={link}>{name}</a></li>
+            <li className='ml-4 text-xl text-white  hover:text-orange-500'><a href={link}>{name}</a></li>
         </div>
     );
 };

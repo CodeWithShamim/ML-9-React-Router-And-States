@@ -17,7 +17,7 @@ const Navbar = () => {
             <div onClick={()=>setOpen(!open)}  className='w-6 h-6 md:hidden'>
                 {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
             </div>
-           <ul className={`md:flex justify-center items-center p-4 absolute duration-500 ease-in ${open ? 'top-6' : 'top-[-160px]'}`}>
+           <ul className={`md:flex justify-center bg-purple-600 w-full items-center md:top-0 p-8 absolute duration-500 ease-in ${open ? 'top-6' : 'top-[-210px] md:top-0'}`}>
                {linkItem.map(item=><Link key={item.id} item={item}></Link>)}
            </ul> 
         </nav>
