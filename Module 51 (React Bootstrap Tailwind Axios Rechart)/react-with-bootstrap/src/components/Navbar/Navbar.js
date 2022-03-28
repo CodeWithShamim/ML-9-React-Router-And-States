@@ -14,10 +14,10 @@ const Navbar = () => {
     ]
     return (
         <nav className='bg-purple-600'>
-            <div onClick={()=>setOpen(!open)}  className='w-6 h-6 md:hidden'>
-                {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
+            <div onClick={()=>setOpen(!open)}>
+                {open ? <XIcon className='w-7 h-7 md:hidden text-white ml-4'></XIcon> : <MenuIcon className='w-7 h-7 md:hidden text-white ml-4'></MenuIcon>}
             </div>
-           <ul className={`md:flex justify-center bg-purple-600 w-full items-center md:top-0 p-8 absolute duration-500 ease-in ${open ? 'top-6' : 'top-[-210px] md:top-0'}`}>
+           <ul className={`md:flex justify-center bg-purple-600 w-full items-center md:static p-8 absolute duration-500 ease-in ${open ? 'top-7' : 'top-[-210px] md:top-0'}`}>
                {linkItem.map(item=><Link key={item.id} item={item}></Link>)}
            </ul> 
         </nav>
