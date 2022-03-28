@@ -4,20 +4,20 @@ import './Navbar.css'
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 
 const Navbar = () => {
-    const [items, setItems] = useState(false);
+    const [open, setOpen] = useState(false);
     const linkItem = [
         {id:1, name: "Home", link:'./home'},
-        {id:1, name: "Products", link:'./products'},
-        {id:1, name: "Contact", link:'./contact'},
-        {id:1, name: "About", link:'./about'},
-        {id:1, name: "Account", link:'./account'}
+        {id:2, name: "Products", link:'./products'},
+        {id:3, name: "Contact", link:'./contact'},
+        {id:4, name: "About", link:'./about'},
+        {id:5, name: "Account", link:'./account'}
     ]
     return (
-        <nav className='bg-purple-500'>
-            <div onClick={()=>setItems(!items)}  className='w-6 h-6 md:hidden'>
-                {items ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
+        <nav className='bg-purple-600'>
+            <div onClick={()=>setOpen(!open)}  className='w-6 h-6 md:hidden'>
+                {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
             </div>
-           <ul className='md:flex p-4 justify-center items-center'>
+           <ul className={`md:flex justify-center items-center p-4 absolute duration-500 ease-in ${open ? 'top-6' : 'top-[-160px]'}`}>
                {linkItem.map(item=><Link key={item.id} item={item}></Link>)}
            </ul> 
         </nav>
