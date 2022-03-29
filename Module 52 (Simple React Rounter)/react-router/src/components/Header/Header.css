@@ -1,0 +1,12 @@
+ul {
+    background-color: aqua;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 25px;
+    font-size: 22px;
+}
