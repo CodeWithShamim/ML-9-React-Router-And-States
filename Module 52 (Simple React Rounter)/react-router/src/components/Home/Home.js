@@ -1,9 +1,17 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 const Home = () => {
+    let navigate = useNavigate();
+    const showProductDetails = (id) =>{
+        const path = `/products/${id}`;
+        navigate(path)
+
+    }
     return (
         <div>
-            this is Home
+            <h1>this is Home</h1>
+            <button onClick={()=>showProductDetails(10)}>GO About Page</button>
         </div>
     );
 };
