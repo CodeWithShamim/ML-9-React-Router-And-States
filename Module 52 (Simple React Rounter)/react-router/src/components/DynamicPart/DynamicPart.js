@@ -22,6 +22,7 @@ const DynamicPart = () => {
             <h2>Email: {show.email}</h2>
             <h2>Phone: {show.phone}</h2>
             <h2>Website: {show.website}</h2>
+            <h2>City: {show.address?.city}</h2>
         </div>
     );
 };
