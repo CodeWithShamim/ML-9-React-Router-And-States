@@ -3,7 +3,7 @@ import React from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 import './Header.css'
 
-const Header = () => {
+const Header=() => {
     return (
         <div>
             <nav>
@@ -11,8 +11,9 @@ const Header = () => {
                     <CustomLink to="/"><li>Home</li></CustomLink>
                     <CustomLink to="products"><li>Products</li></CustomLink>
                     <CustomLink to="about"><li>About</li></CustomLink>
-                    
-                    
+                    <CustomLink to="post"><li>Post</li></CustomLink>
+
+
                 </ul>
             </nav>
         </div>
