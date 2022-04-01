@@ -1,0 +1,11 @@
+.grandpa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grandpa div {
+    border: 2px solid blue;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
