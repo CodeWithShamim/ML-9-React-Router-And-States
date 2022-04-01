@@ -1,6 +1,7 @@
 .grandpa {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border: 2px solid red;
 }
 
 .grandpa div {

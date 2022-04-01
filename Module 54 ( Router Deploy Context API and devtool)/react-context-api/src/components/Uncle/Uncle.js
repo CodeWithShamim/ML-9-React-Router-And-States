@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Uncle = () => {
+const Uncle = ({house}) => {
     return (
         <div>
+            <p>{house}</p>
             <h1>this is a Uncle</h1>
         </div>
     );
