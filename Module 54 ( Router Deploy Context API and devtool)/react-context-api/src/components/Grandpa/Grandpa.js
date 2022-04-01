@@ -14,7 +14,7 @@ const Grandpa = () => {
   };
 
   return (
-    <ringContext.Provider value={`Item is ----- ${house}`}>
+    <ringContext.Provider value={[house, addItem, setHouse]}>
       <div>
         <button onClick={addItem}>Add item</button>
         <div className="grandpa">
