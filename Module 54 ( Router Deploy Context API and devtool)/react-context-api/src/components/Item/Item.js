@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Item=() => {
     const cart = [4,5,6,5,5]
@@ -25,6 +26,10 @@ const Item=() => {
                 <h1>wow, it's && operator!!!</h1>
                 </div>}
             {cart.length <=4 ? <h1>keep adding</h1> : <button>Remove all</button>}
+
+             <br />
+             <br />
+            <Link to='/grandpa'>Grandpa</Link>
         </div>
     );
 };
